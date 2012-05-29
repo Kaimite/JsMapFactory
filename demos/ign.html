@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>API Geoportail - votre carte personnelle</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css"><!--/*--><![CDATA[/*><!--*/
+    div#viewerDiv {
+        width:800px;
+        height:600px;
+        background-color:white;
+        background-image:url(http://api.ign.fr/geoportail/api/js/1.3/theme/geoportal/img/loading.gif);
+        background-position:center center;
+        background-repeat:no-repeat;
+    }
+    /*]]>*/--></style>
+    
+  </head>
+  <body>
+
+    <div id="viewerDiv"></div>
+    <script type="text/javascript"><!--//--><![CDATA[//><!--
+    window.onload= function() {
+        Geoportal.load(
+            // div's ID:
+            'viewerDiv',
+            // API's keys:
+            ['6470694166119485976'],
+            {// map's center :
+                // longitude:
+                lon:2.731525,
+                // latitude:
+                lat:45.833333
+            }
+        );
+    };
+    //--><!]]></script>
+
+    <script
+    type="text/javascript"
+    src="http://api.ign.fr/geoportail/api/js/1.3/Geoportal.js">
+  <!-- -->
+  </script>
+  </body>
+</html>
+		

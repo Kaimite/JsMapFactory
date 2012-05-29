@@ -14,7 +14,8 @@ Kaimite.Map.GoogleMap = function (mapRef) {
 }
 
 Kaimite.Map.GoogleMap.prototype.show = function () {
-	this.map = new google.maps.Map(this.mapRef.getDomTarget(), this.mapOptions);
+	this.mapOptions.center 	= this.mapOptions.center || new google.maps.LatLng(0, 0);
+	this.map 				= new google.maps.Map(this.mapRef.getDomTarget(), this.mapOptions);
 }
 
 Kaimite.Map.GoogleMap.prototype.setMapType = function (value) {
@@ -60,7 +61,6 @@ Kaimite.Map.GoogleMap.prototype.displayStreetViewControl = function (value) {
 Kaimite.Map.GoogleMap.prototype.displayOverviewMapControl = function (value) {
 	this.mapOptions.overviewMapControl = value;
 }
-
 
 Kaimite.Map.GoogleMap.prototype.displayScale = function (value) {
 	this.mapOptions.scaleControl = value;

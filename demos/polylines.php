@@ -1,5 +1,4 @@
 <?php
-include(dirname(__FILE__) . "/../utils.php");
 
 //--> Traitement du fichier GPX
 $xml = simplexml_load_string(file_get_contents(dirname(__FILE__) . "/trace.gpx"));

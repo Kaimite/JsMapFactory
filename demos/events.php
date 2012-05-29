@@ -1,6 +1,3 @@
-<?php
-include(dirname(__FILE__) . "/../utils.php");
-?>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
